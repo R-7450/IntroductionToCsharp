@@ -6,7 +6,7 @@ class Circle
     static Circle() //static constructor do not require access modifier, used to initialise static field
     {
         Console.WriteLine("static constructor is called automatically only one time");
-        Circle.Pi = 3.14F;
+        Pi = 3.14F;
     }
     public Circle(int r)//instance constructor require access modifier,used to initialise non static field
     {
@@ -15,7 +15,7 @@ class Circle
     }
     public float Area()
     {
-        return Circle.Pi * this.radius * this.radius;//to access static field we are using classname.staticfield name
+        return Pi * this.radius * this.radius;//to access static field we are using classname.staticfield name
     }// but for radius we dont require classname as it is instance field or non static field;
 }
 class Program
